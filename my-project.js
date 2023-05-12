@@ -1,2 +1,1 @@
-alert("Hello Mr. U");
-alert("Welcome to our proposal");
+alert("Hello Mr. U\nWelcome to our proposal");

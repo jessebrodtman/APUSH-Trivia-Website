@@ -1,1 +1,0 @@
-alert("Hello Mr. U\nWelcome to our proposal");

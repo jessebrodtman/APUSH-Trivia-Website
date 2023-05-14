@@ -37,3 +37,75 @@ button {
   text-align: center;
 }
 
+.border {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.lives {
+  font-size: 2rem;
+  margin: 20px;
+  margin-left: 50px; 
+  float: left;
+}
+
+.lives img {
+  max-width: 60%;
+  max-height: 60%;
+  float: left;
+}
+
+.score {
+  font-size: 6rem;
+  color: rgb(233, 25, 25);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 140px;
+  height: 140px;
+  width: 283px;
+  margin: 20px;
+  margin-right: 50px;
+  float: right;
+}
+
+.question {
+  font-size: 2rem;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+.answers {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game-over {
+  color: rgb(233, 25, 25);
+  font-size: 2rem;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message{
+  color: rgb(233, 25, 25);
+  font-size: 2rem;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

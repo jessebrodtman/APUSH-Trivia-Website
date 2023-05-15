@@ -89,7 +89,7 @@ function clearPreviousQuestion(){
 //update the question display
 function updateQuestionDisplay(){
     const questionContainer = document.querySelector('.question');
-    questionContainer.innerText = ('random fact about ' + questionToGuess);
+    questionContainer.innerText = questionToGuess;
 }
 
 //check answer for a question

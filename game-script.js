@@ -52,6 +52,7 @@ function nextQuestion(){
     }
 
     //generate answer buttons
+    //fix bounds
     randomStart = Math.floor(Math.random() * 5)-5;
     if(randomStart + parseInt(questionNumbers[questionIndex])< 0){
         randomStart = 0-parseInt(questionNumbers[questionIndex]);
@@ -95,6 +96,7 @@ function updateQuestionDisplay(){
 
 //check answer for a question
 function checkAnswer(){
+    //disable buttons
     if(this.innerText === questionNames[questionIndex]){
         points+=parseInt(questionPoints[questionIndex]);
         document.querySelector('.score').innerText = points;
@@ -124,6 +126,7 @@ function checkAnswer(){
 }
 
 //update life display
+//fix every other image gone on mobile
 function updateLifeDisplay(){
     const lifeContainer = document.querySelector('.lives');
     lifeContainer.innerHTML = `<img src="hearts${lives}.jpg" alt="${lives} hearts">`

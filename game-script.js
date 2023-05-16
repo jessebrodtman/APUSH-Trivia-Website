@@ -52,7 +52,6 @@ function nextQuestion(){
     }
 
     //generate answer buttons
-    //needs to be fixed to not go out of bounds
     randomStart = Math.floor(Math.random() * 5)-5;
     if(randomStart + parseInt(questionNumbers[questionIndex])< 0){
         randomStart = 0-parseInt(questionNumbers[questionIndex]);

@@ -56,7 +56,7 @@ function nextQuestion(){
     if(randomStart + parseInt(questionNumbers[questionIndex])< 0){
         randomStart = 0-parseInt(questionNumbers[questionIndex]);
     }
-    if(4+randomStart+parseInt(questionNumbers[questionIndex])>45){
+    if(4+randomStart+parseInt(questionNumbers[questionIndex])>=45){
       randomStart = 40-parseInt(questionNumbers[questionIndex]);
     }
     

@@ -7,11 +7,11 @@ const questionPoints = ['1','2','3','4','5','6','7','8','9','10','11','12','13',
 const presidents = ['George Washington','John Adams','Thomas Jefferson','James Madison','James Monroe','John Quincy Adams','Andrew Jackson  ','Martin Van Buren','William Henry Harrison','John Tyler','James K. Polk','Zachary Taylor','Millard Fillmore','Franklin Pierce','James Buchanan','Abraham Lincoln','Andrew Johnson','Ulysses S. Grant','Rutherford B. Hayes','James A. Garfield','Chester A. Arthur','Grover Cleveland','Benjamin Harrison','William McKinley','Theodore Roosevelt','William H. Taft','Woodrow Wilson','Warren G. Harding','Calvin Coolidge','Herbert C. Hoover','Franklin D. Roosevelt','Harry S. Truman','Dwight D. Eisenhower','John F. Kennedy','Lyndon B. Johnson','Richard M. Nixon','Gerald R. Ford','James Earl Carter','Ronald Reagan','George H.W. Bush','William J. Clinton','George W. Bush','Barack H. Obama','Donald J. Trump','Joseph R. Biden, Jr.'];
 const numbers = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22/24','23','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46'];
 
-const maxWrongGuesses = 3;
+//const maxWrongGuesses = 3;
 
-let presidentToGuess = '';
-let lives = 3;
-let points = 0;
+var presidentToGuess = '';
+var lives = 3;
+var points = 0;
 
 //select random question
 function selectRandomQuestionIndex(){
@@ -54,11 +54,11 @@ function nextQuestion(){
     //generate answer buttons
     randomStart = Math.floor(Math.random() * 5)-5;
     if(randomStart + parseInt(questionNumbers[questionIndex])< 0){
-        randomStart = 0-parseInt(questionNumbers[questionIndex]);
-    }
-    if(4+randomStart+parseInt(questionNumbers[questionIndex])>=45){
-      randomStart = 40-parseInt(questionNumbers[questionIndex]);
-    }
+        randomStart = 0;
+    }**
+    if(parseInt(questionNumbers[questionIndex])>41){
+      randomStart = -4;
+    }*/
     
     for(let i=0; i<5; i++){
         const answerButton = document.createElement('button');
@@ -101,11 +101,12 @@ function checkAnswer(){
         const messageContainer = document.querySelector('.message');
         messageContainer.innerText = 'Correct! The president is ' + questionNames[questionIndex] + '!';
         
-        const gameOverContainer = document.querySelector('.game-over');
+        /*const gameOverContainer = document.querySelector('.game-over');
         const nextButton = document.createElement('button');
         nextButton.innerText = 'Next Question';
         nextButton.addEventListener('click', nextQuestion);
-        gameOverContainer.appendChild(nextButton);
+        gameOverContainer.appendChild(nextButton);*/
+        nextQuestion();
     }else{
         lives--;
         updateLifeDisplay();

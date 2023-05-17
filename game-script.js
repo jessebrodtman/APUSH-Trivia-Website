@@ -53,10 +53,11 @@ function nextQuestion(){
 
     //generate answer buttons
     randomStart = Math.floor(Math.random() * 5)-5;
-    if(randomStart > parseInt(questionNumbers[questionIndex])){
-        randomStart = parseInt(questionNumbers[questionIndex]);
-    }else if(4+randomStart+parseInt(questionNumbers[questionIndex])>=46){
-      randomStart = 42-parseInt(questionNumbers[questionIndex]);
+    if(randomStart + parseInt(questionNumbers[questionIndex])< 0){
+        randomStart = 0-parseInt(questionNumbers[questionIndex]);
+    }
+    if(4+randomStart+parseInt(questionNumbers[questionIndex])>=45){
+      randomStart = 40-parseInt(questionNumbers[questionIndex]);
     }
     
     for(let i=0; i<5; i++){
@@ -89,7 +90,7 @@ function clearPreviousQuestion(){
 //update the question display
 function updateQuestionDisplay(){
     const questionContainer = document.querySelector('.question');
-    questionContainer.innerText = 'random fact about '+questionToGuess;
+    questionContainer.innerText = 'random facts about '+questionToGuess;
 }
 
 //check answer for a question

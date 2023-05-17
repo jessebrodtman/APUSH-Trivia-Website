@@ -101,12 +101,12 @@ function checkAnswer(){
         const messageContainer = document.querySelector('.message');
         messageContainer.innerText = 'Correct! The president is ' + questionNames[questionIndex] + '!';
         
-        /*const gameOverContainer = document.querySelector('.game-over');
+        const gameOverContainer = document.querySelector('.game-over');
         const nextButton = document.createElement('button');
         nextButton.innerText = 'Next Question';
         nextButton.addEventListener('click', nextQuestion);
-        gameOverContainer.appendChild(nextButton);*/
-        nextQuestion();
+        gameOverContainer.appendChild(nextButton);
+        //nextQuestion();
     }else{
         lives--;
         updateLifeDisplay();

@@ -60,6 +60,9 @@ function nextQuestion(){
       randomStart = -4;
     }
     
+    const gameOverContainer = document.querySelector('.game-over');
+    gameOverContainer.innerText = randomStart;
+    
     for(let i=0; i<5; i++){
         const answerButton = document.createElement('button');
         answerButton.innerText = presidents[randomStart+i+parseInt(questionNumbers[questionIndex])];

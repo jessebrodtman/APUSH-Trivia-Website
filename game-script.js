@@ -55,10 +55,10 @@ function nextQuestion(){
     randomStart = Math.floor(Math.random() * 5)-5;
     if(randomStart + parseInt(questionNumbers[questionIndex])< 0){
         randomStart = 0;
-    }**
+    }
     if(parseInt(questionNumbers[questionIndex])>41){
       randomStart = -4;
-    }*/
+    }
     
     for(let i=0; i<5; i++){
         const answerButton = document.createElement('button');

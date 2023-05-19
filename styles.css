@@ -50,7 +50,8 @@ button {
 }
 
 .lives {
-  font-size: 2rem;
+  font-size: 9rem;
+  color: red;
   margin: 20px;
   margin-left: 50px; 
   float: left;
@@ -113,4 +114,5 @@ button {
 .centertable{
   margin-left: auto;
   margin-right: auto;
+  border-spacing: 50px;
 }

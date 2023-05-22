@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(12, 17, 94);
+  background-color: navy;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h2 {
 }
 
 h4 {
-  color: rgb(255, 60, 60);
+  color: red;
   text-align: center;
   font-size: 40px;
 }
@@ -31,7 +31,7 @@ button {
   color: rgb(0, 0, 0);
   border-radius: 5px;
   border: 2px solid rgb(0, 0, 0);
-  padding: 45px 75px;
+  padding: 10px 10px;
   font-size: 40px;
   cursor: pointer;
   text-align: center;
@@ -40,10 +40,9 @@ button {
 button img{
   border-radius: 5px;
   border: 2px solid rgb(0, 0, 0);
-  padding: 15px 25px;
   cursor: pointer;
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
 }
 
 .border {
@@ -74,7 +73,7 @@ button img{
 
 .score {
   font-size: 6rem;
-  color: rgb(255, 60, 60);
+  color: red;
   background-color: rgb(255, 255, 255);
   text-align: center;
   vertical-align: middle;
@@ -102,7 +101,7 @@ button img{
 }
 
 .game-over {
-  color: rgb(255, 60, 60);
+  color: red;
   font-size: 2rem;
   margin: 20px;
   display: flex;
@@ -111,7 +110,7 @@ button img{
 }
 
 .message{
-  color: rgb(255, 60, 60);
+  color: red;
   font-size: 2rem;
   margin: 20px;
   display: flex;
